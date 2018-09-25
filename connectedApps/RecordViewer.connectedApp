@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>odatruh.ykcir@resourceful-moose-u4771p.com</contactEmail>
+    <label>RecordViewer</label>
+    <oauthConfig>
+        <callbackUrl>https://localhost:8443/oauth-redirect</callbackUrl>
+        <consumerKey>3MVG9YDQS5WtC11qludyPPBGCmB9S3wADtjVWKMzSh8hrQfnUX3aiesltzqs3tztDUisUt4PvHxnxdF_JPJ1H</consumerKey>
+        <scopes>Api</scopes>
+    </oauthConfig>
+</ConnectedApp>

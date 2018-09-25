@@ -1,0 +1,26 @@
+<apex:page controller="ContactListController">
+    <apex:form >
+        <apex:pageBlock title="Contacts" id="contacts">
+            <apex:pageBlockTable value="{! contacts }" var="c">
+                <apex:column value="{! c.FirstName }">
+                    <apex:facet name="header">
+                        <apex:commandLink action="{! sortByFirstName }"
+							reRender="contacts">First Name
+                        </apex:commandLink>
+                    </apex:facet>
+                </apex:column>
+
+                <apex:column value="{! c.LastName }">
+                    <apex:facet name="header">
+                        <apex:commandLink action="{! sortByLastName }"
+							reRender="contacts">Last Name
+                        </apex:commandLink>
+                    </apex:facet>
+                </apex:column>
+
+                <apex:column value="{! c.Title }"/>
+                <apex:column value="{! c.Email }"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
